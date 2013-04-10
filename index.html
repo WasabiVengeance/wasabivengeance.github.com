@@ -28,8 +28,7 @@
 			<div class="span9">
 				<h1>What I'm working on</h1>
 				I'm working on building a set of standalone PHP libraries that can be easily integrated into any project. 
-				They all have a common coding style in terms of class, function, and variable names. The end goal is to build an example project 
-				that uses all of these libraries together.
+				The end goal is to build an example project that uses all of these libraries together.
 				<br />&nbsp;<br />
 				Links to each library:
 				<ul>
@@ -40,6 +39,18 @@
 					<li><a href="https://github.com/WasabiVengeance/DataFormatter"><b>DataFormatter</b></a> - provides functions for formatter any kind of data.</li>
 					<li><a href="https://github.com/WasabiVengeance/JsonVC"><b>JsonVC</b></a> - provides a basic URL router library that sends back Json.</li>
 				</ul>
+				<br />
+				<h2>Coding style</h2>
+				They all have a common coding style in terms of class, function, 
+				and variable names. Each library has a 3 letter abbreviation:
+				BootstrapConstructor's is 'bsc', JsonVC's is 'jvc'. This abbreviation 
+				is used to name the primary class in each framework and the single 
+				global variable used by each library. The global variable is named 
+				$__[abbreviation]. For example, $__jvc and $__bsc. This variable is always
+				an array. 
+				<h2>Including a library</h2>
+				To load any library, simply include the main PHP class file. Some libraries 
+				require an init function be called to pass configuration info.
 			</div>
 		</div>
 		
