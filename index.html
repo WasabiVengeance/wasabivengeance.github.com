@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<meta name="author" content="" />
+		<meta name="author" content="Mike Thorn" />
 
 		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet" />
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet" />
@@ -18,7 +18,6 @@
 		<![endif]-->
 	</head>
 	<body>
-		
 		<div class="row-fluid">
 			<div class="span3">
 				<h2>Contact Me</h2>
@@ -28,9 +27,10 @@
 			<div class="span9">
 				<h1>What I'm working on</h1>
 				I'm working on building a set of standalone PHP libraries that can be easily integrated into any project. 
-				The end goal is to build an example project that uses all of these libraries together.
+				The end goal is to build an as yet unnamed example project that uses all of these libraries together. 
+				The example project will require jQuery and Twitter Bootstrap. 
 				<br />&nbsp;<br />
-				Links to each library:
+				Links to my libraries:
 				<ul>
 					<li><a href="https://github.com/WasabiVengeance/BootstrapConstructor"><b>BootstrapConstructor</b></a> - provides functions for building Twitter Bootstrap HTML.</li>
 					<li><a href="https://github.com/WasabiVengeance/DatabaseManager"><b>DatabaseManager</b></a> - provides functions for database querying/management.</li>
@@ -48,12 +48,19 @@
 				global variable used by each library. The global variable is named 
 				$__[abbreviation]. For example, $__jvc and $__bsc. This variable is always
 				an array. 
+				<h2>Testing</h2>
+				Each library comes with its own unit tests. They can be run from the 
+				command line using PHP, or via a web server. Each test generates an output 
+				file, which is then compared to an expected file. 
 				<h2>Including a library</h2>
 				To load any library, simply include the main PHP class file. Some libraries 
-				require an init function be called to pass configuration info.
+				require an init function be called to pass configuration info. Some libraries
+				may require a javascript file be loaded into your webpage to use client-side 
+				functions.
+				<h2>Licenses</h2>
+				All libraries are currently BSD-licensed. I appreciate but do not require 
+				attribution or contributions.
 			</div>
 		</div>
-		
-		
 	</body>
 </html>
