@@ -45,13 +45,14 @@
 				This project will require jQuery and Twitter Bootstrap. 
 				
 				<h2>Coding style</h2>
-				They all have a common coding style in terms of class, function, 
+				All libraries share a common coding style in terms of class, function, 
 				and variable names. Each library has a 3 letter abbreviation:
 				BootstrapConstructor's is 'bsc', JsonVC's is 'jvc'. This abbreviation 
 				is used to name the primary class in each framework and the single 
 				global variable used by each library. The global variable is named 
 				$__[abbreviation]. For example, $__jvc and $__bsc. This variable is always
-				an array. 
+				an array. This is to minimize the possibility of a naming collision with 
+				any porject.
 				
 				<h2>Testing</h2>
 				Each library comes with its own unit tests. They can be run from the 
@@ -67,6 +68,19 @@
 				<h2>Licenses</h2>
 				All libraries are currently BSD-licensed. I appreciate but do not require 
 				attribution or contributions.
+				
+				<h2>Progress towards 1.0</h2>
+				Once I feel that each library is complete enough to use, I'll create a 1.0 
+				branch in each repo. Below is my estimated progress of each library:
+				<ul>
+					<li><b>BootstrapConstructor</b> (only a handful of simple widgets are done)<div class="progress"><div class="bar" style="width: 10%;"></div></div></li>
+					<li><b>DatabaseManager</b> (need to write adaptor system, tons of unit tests)<div class="progress"><div class="bar" style="width: 30%;"></div></div></li>
+					<li><b>DataValidator</b><div class="progress"><div class="bar" style="width: 5%;"></div></div></li>
+					<li><b>LanguageHelper</b> (needs a lot more test scripts, but mostly done)<div class="progress"><div class="bar" style="width: 80%;"></div></div></li>
+					<li><b>DataFormatter</b> (basic formatters done, client side library is empty)<div class="progress"><div class="bar" style="width: 30%;"></div></div></li>
+					<li><b>JsonVC</b> (needs better error handling, more test scripts. Probably useable right now)<div class="progress"><div class="bar" style="width: 80%;"></div></div></li>
+				</ul>
+				Caveat: each library requires a different amount of work to get to 1.0. BootstrapConstructor and DatabaseManager are at least 5x more complex than any other library, and also require significantly more complicated testing scripts.
 			</div>
 		</div>
 	</body>
